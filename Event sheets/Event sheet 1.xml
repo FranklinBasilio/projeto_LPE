@@ -1,0 +1,765 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable comment="vidas do jogador" constant="0" name="var_lifes" sid="925206357897410" static="0" type="number">3</variable>
+        <event-block sid="156374072747492">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="165046654561988" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="354146283077360" type="camera">
+                    <param id="0" name="X">lerp(Self.X,personagem.X,0.03)</param>
+                    <param id="1" name="Y">lerp(Self.Y,personagem.Y,0.03)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="987306560845106" title="menu">
+            <sub-events>
+                <event-block sid="758032782957657">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="649693830868645" type="Keyboard">
+                            <param id="0" name="Key">40</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="880945941569895" type="menu">
+                            <param id="0" name="Animation">&quot;menuIniciar&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="356211200181653" type="menu">
+                            <param id="0" name="Instance variable">ativacao</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="559941677901681" type="System">
+                            <param id="0" name="Seconds">0.0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="412376629814127" type="menu">
+                            <param id="0" name="Animation">&quot;menuCancelar&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="785513306811929">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="951518689134882" type="Keyboard">
+                            <param id="0" name="Key">40</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="633196141599911" type="menu">
+                            <param id="0" name="Animation">&quot;menuCancelar&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="957661438685668" type="menu">
+                            <param id="0" name="Instance variable">ativacao</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="897058376080963" type="System">
+                            <param id="0" name="Seconds">0.0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="130215761754932" type="menu">
+                            <param id="0" name="Animation">&quot;menuAjuda&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="287311687245188">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="851749660395950" type="Keyboard">
+                            <param id="0" name="Key">40</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="323125213375508" type="menu">
+                            <param id="0" name="Animation">&quot;menuAjuda&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="233868986084599" type="menu">
+                            <param id="0" name="Instance variable">ativacao</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="718943837693008" type="System">
+                            <param id="0" name="Seconds">0.0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="705632459872557" type="menu">
+                            <param id="0" name="Animation">&quot;menuIniciar&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="485458043953715">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="204053971794113" type="Keyboard">
+                            <param id="0" name="Key">38</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="798078239678707" type="menu">
+                            <param id="0" name="Animation">&quot;menuIniciar&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="642621217807406" type="menu">
+                            <param id="0" name="Instance variable">ativacao</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="714818415911594" type="System">
+                            <param id="0" name="Seconds">0.0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="987003709304807" type="menu">
+                            <param id="0" name="Animation">&quot;menuAjuda&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="804372576754996">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="810628691009194" type="Keyboard">
+                            <param id="0" name="Key">38</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="567577278931438" type="menu">
+                            <param id="0" name="Animation">&quot;menuCancelar&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="313676034636095" type="menu">
+                            <param id="0" name="Instance variable">ativacao</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="241839524855325" type="System">
+                            <param id="0" name="Seconds">0.0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="477490107637409" type="menu">
+                            <param id="0" name="Animation">&quot;menuIniciar&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="224403459851736">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="103304767236513" type="Keyboard">
+                            <param id="0" name="Key">38</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="291958690147922" type="menu">
+                            <param id="0" name="Animation">&quot;menuAjuda&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="933079958724686" type="menu">
+                            <param id="0" name="Instance variable">ativacao</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="561684657430417" type="System">
+                            <param id="0" name="Seconds">0.0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="269829666493329" type="menu">
+                            <param id="0" name="Animation">&quot;menuCancelar&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="742350967664657">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="162386353817444" type="personagem">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">LayoutHeight</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="118190023861012" type="personagem">
+                    <param id="0" name="X">64</param>
+                    <param id="1" name="Y">96</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="588384670876034" type="System">
+                    <param id="0" name="Variable">var_lifes</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="328280448192732" title="Movimentação">
+            <sub-events>
+                <event-block sid="192493383288947">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="364095683231259" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="959281296168426" type="personagem">
+                            <param id="0" name="Animation">&quot;andando&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="640824147107033" type="personagem">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="414467168154553" type="personagem">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="413275484879031">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="822788641364630" type="Keyboard">
+                            <param id="0" name="Key">39</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="554073130609627" type="personagem">
+                            <param id="0" name="Animation">&quot;andando&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="581640569791558" type="personagem">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="798461548000790" type="personagem">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="435793509234065">
+                    <conditions>
+                        <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="310147253697542" type="personagem" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="408610988230756" type="personagem">
+                            <param id="0" name="Animation">&quot;parado&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="522783026507591">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="893666597058679" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="866199365982035" type="contadorVidas">
+                    <param id="0" name="Text">&quot;Vidas:&quot;&amp;var_lifes</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="678488940399295" title="botaoIniciar">
+            <sub-events>
+                <event-block sid="837233656931144">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="184462656926057" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="990951140184004" type="Audio">
+                            <param id="0" name="Audio file">479270__unfa__fuckup-theme</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;musica1&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="356176154484942" type="System">
+                            <param id="0" name="Seconds">2.0</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="959414340549617" type="tituloJogo" />
+                        <action id="-15" name="Set visible" sid="210029354977655" type="tituloJogo">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="862218366099792" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="270139086710596" type="menu" />
+                        <action id="-15" name="Set visible" sid="917083571253721" type="menu">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="794468795719262" type="menu">
+                            <param id="0" name="Instance variable">ativacao</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="518734213675011">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="673990165176578" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="431118486194774" type="menu">
+                            <param id="0" name="Animation">&quot;menuIniciar&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="850416236756017" type="menu">
+                            <param id="0" name="Instance variable">ativacao</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="461644852852668" type="System">
+                            <param id="0" name="Seconds">0.0</param>
+                        </action>
+                        <action id="0" name="Play" sid="381549029969863" type="Audio">
+                            <param id="0" name="Audio file">mario_coin_sound_1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="Fade2" id="1" name="Start fade" sid="999836928211805" type="menu" />
+                        <action id="-10" name="Set value" sid="579188600897117" type="menu">
+                            <param id="0" name="Instance variable">ativacao</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="504362832446564" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action behavior="Fade2" id="1" name="Start fade" sid="381026453236992" type="tituloJogo" />
+                        <action id="-16" name="Wait" sid="899993412008914" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="900036952352595" type="System">
+                            <param id="0" name="Object to create">transicao2</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">-7</param>
+                            <param id="3" name="Y">-14</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="705675257088208" type="System">
+                            <param id="0" name="Seconds">2.0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="875411608780050" type="System">
+                            <param id="0" name="Seconds">0.0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="382402880597596" type="System">
+                            <param id="0" name="Layout">fase1</param>
+                        </action>
+                        <action id="-43" name="Go to next/previous layout" sid="774651472705580" type="System">
+                            <param id="0" name="Which">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="449476384994149" title="botaoAjuda">
+            <sub-events>
+                <event-block sid="124821395991680">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="645452210124283" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="103432927191867" type="Audio">
+                            <param id="0" name="Audio file">479270__unfa__fuckup-theme</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;musica1&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="216504323941015" type="System">
+                            <param id="0" name="Seconds">2.0</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="851163669835531" type="tituloJogo" />
+                        <action id="-15" name="Set visible" sid="137932794077401" type="tituloJogo">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="270278357626462" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="316180613147081" type="menu" />
+                        <action id="-15" name="Set visible" sid="284252832799460" type="menu">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="519548730398680" type="menu">
+                            <param id="0" name="Instance variable">ativacao</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="899149866935209">
+                    <conditions>
+                        <condition id="0" name="On key pressed" sid="955049137137186" type="Keyboard">
+                            <param id="0" name="Key">32</param>
+                        </condition>
+                        <condition id="2" name="Is playing" sid="418710199144432" type="menu">
+                            <param id="0" name="Animation">&quot;menuAjuda&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="541453322730457" type="menu">
+                            <param id="0" name="Instance variable">ativacao</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="738851888411204" type="System">
+                            <param id="0" name="Seconds">0.0</param>
+                        </action>
+                        <action id="0" name="Play" sid="960661378488998" type="Audio">
+                            <param id="0" name="Audio file">mario_coin_sound_1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action behavior="Fade2" id="1" name="Start fade" sid="739806601563823" type="menu" />
+                        <action id="-10" name="Set value" sid="832334981441594" type="menu">
+                            <param id="0" name="Instance variable">ativacao</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="513228963575334" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action behavior="Fade2" id="1" name="Start fade" sid="171543148462707" type="tituloJogo" />
+                        <action id="-16" name="Wait" sid="814265985230834" type="System">
+                            <param id="0" name="Seconds">1.5</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="787708116093074" type="System">
+                            <param id="0" name="Object to create">transicao2</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">-7</param>
+                            <param id="3" name="Y">-14</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="364450454966971" type="System">
+                            <param id="0" name="Seconds">2.0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="681547030373201" type="System">
+                            <param id="0" name="Seconds">0.0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="799657243085244" type="System">
+                            <param id="0" name="Layout">guiaDeInstrucao</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="985329537969501">
+            <conditions>
+                <condition id="3" name="On touched object" sid="235407753639394" type="Touch">
+                    <param id="0" name="Object">setaTexto</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="257943172967076" type="spriteFontTexto">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Set value" sid="503591798440416" type="spriteFontTexto">
+                    <param id="0" name="Instance variable">texto_para_mostrar</param>
+                    <param id="1" name="Value">&quot;Olá pessoal! Vamos aprender brincando agora&quot;</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="150616131548885" type="spriteFontTexto">
+                    <param id="0" name="Instance variable">show</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="922921432724475">
+            <conditions>
+                <condition id="3" name="On touched object" sid="152121687932690" type="Touch">
+                    <param id="0" name="Object">setaAmarela</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="782751906500793" type="spriteFontTexto">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Set value" sid="298394259325975" type="spriteFontTexto">
+                    <param id="0" name="Instance variable">texto_para_mostrar</param>
+                    <param id="1" name="Value">&quot;Segunda caixa de texto&quot;</param>
+                </action>
+                <action id="-13" name="Set boolean" sid="690585539312554" type="spriteFontTexto">
+                    <param id="0" name="Instance variable">show</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="383666341874214">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="744577902145906" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="393162024923341">
+                    <conditions>
+                        <condition id="-8" name="Is boolean instance variable set" sid="110541810901595" type="spriteFontTexto">
+                            <param id="0" name="Instance variable">show</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="159326193879607" type="spriteFontTexto">
+                            <param id="0" name="Text">left(spriteFontTexto.texto_para_mostrar,len(spriteFontTexto.Text)+1)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="107735831695850">
+            <conditions>
+                <condition id="0" name="Compare text" sid="589802621739599" type="spriteFontTexto">
+                    <param id="0" name="Text to compare">spriteFontTexto.texto_para_mostrar</param>
+                    <param id="1" name="Case sensitivity">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set boolean" sid="649411225523106" type="spriteFontTexto">
+                    <param id="0" name="Instance variable">show</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="940093910370906" title="Primeira Muralha">
+            <sub-events>
+                <comment>Primeira Muralha</comment>
+                <event-block sid="120362166853950">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="503136131381333" type="personagem">
+                            <param id="0" name="Object">parede</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="894338837947616" type="balaoPixel">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="681948423558196" type="textoInformacao">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="426398516724048" type="textoInformacao">
+                            <param id="0" name="Text">&quot;Quantas flores existem do outro lado do muro?&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="985686490931092" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="768499729013055" type="opcao1">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="417336039065358" type="opcao2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="326936102864664" type="opcao3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="644448139420477">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="476679538362162" type="Touch">
+                            <param id="0" name="Object">opcao2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="403177932581146" type="parede" />
+                        <action id="0" name="Play" sid="159894514310907" type="Audio">
+                            <param id="0" name="Audio file">mario_coin_sound_1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="967185650048696" type="balaoPixel" />
+                        <action id="-9" name="Destroy" sid="860841193076971" type="textoInformacao" />
+                        <action id="-15" name="Set visible" sid="511318967426685" type="opcao1">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="193864239732903" type="opcao2">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="190357060285458" type="opcao3">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="466010163477454" type="planta" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="210796554115906" title="Segunda Muralha">
+            <sub-events>
+                <comment>Primeira Muralha</comment>
+                <event-block sid="916034101255314">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="359619807596785" type="personagem">
+                            <param id="0" name="Object">parede8</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="756835038039769" type="balaoPixel2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="427091016284110" type="textoInformacao2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="487656967974590" type="textoInformacao2">
+                            <param id="0" name="Text">&quot;Quantas bananas tem?&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="255560060662995" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="608536935615229" type="caixote5">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="176470335756487" type="caixote6">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="633830896764139">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="917864399203493" type="Touch">
+                            <param id="0" name="Object">caixote6</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="314181209785443" type="parede8" />
+                        <action id="0" name="Play" sid="773069280709221" type="Audio">
+                            <param id="0" name="Audio file">mario_coin_sound_1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="204838881988707" type="balaoPixel2" />
+                        <action id="-9" name="Destroy" sid="953714453648912" type="textoInformacao2" />
+                        <action id="-15" name="Set visible" sid="599340159280815" type="caixote5">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="631115116322113" type="caixote6">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="573614362366636" title="Personagem x Banana" />
+        <comment>Personagem x Banana</comment>
+        <event-block sid="876747179551998">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="514992860905444" type="personagem">
+                    <param id="0" name="Object">banana</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="775830078723293" type="banana" />
+                <action id="0" name="Play" sid="859012564843560" type="Audio">
+                    <param id="0" name="Audio file">mario_coin_sound_1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="421351208483211">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="553148894818261" type="personagem">
+                    <param id="0" name="Object">banana2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="104406967645735" type="banana2" />
+                <action id="0" name="Play" sid="502412451592039" type="Audio">
+                    <param id="0" name="Audio file">mario_coin_sound_1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="338251939852363">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="756859450192052" type="personagem">
+                    <param id="0" name="Object">banana3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="107197663020608" type="banana3" />
+                <action id="0" name="Play" sid="983766280486845" type="Audio">
+                    <param id="0" name="Audio file">mario_coin_sound_1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="302467903811774">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="713766966803594" type="personagem">
+                    <param id="0" name="Object">banana4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="259074376120009" type="banana4" />
+                <action id="0" name="Play" sid="202563292915152" type="Audio">
+                    <param id="0" name="Audio file">mario_coin_sound_1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="910370498292717">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="161611857460993" type="personagem">
+                    <param id="0" name="Object">banana5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="848328209438433" type="banana5" />
+                <action id="0" name="Play" sid="548205752214626" type="Audio">
+                    <param id="0" name="Audio file">mario_coin_sound_1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="312038977425075">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="831227915240083" type="personagem">
+                    <param id="0" name="Object">banana7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="219919187410400" type="banana7" />
+                <action id="0" name="Play" sid="495112705292644" type="Audio">
+                    <param id="0" name="Audio file">mario_coin_sound_1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="738412258466824">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="797838683935824" type="personagem">
+                    <param id="0" name="Object">moedas</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="955996208618487" type="moedas" />
+                <action id="0" name="Play" sid="804428124241940" type="Audio">
+                    <param id="0" name="Audio file">mario_coin_sound_1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="665508012173104">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="751086905446513" type="personagem">
+                    <param id="0" name="Object">moedas2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="571320787265327" type="moedas2" />
+                <action id="0" name="Play" sid="580157990529154" type="Audio">
+                    <param id="0" name="Audio file">mario_coin_sound_1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="534157772733444">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="444527224825011" type="personagem">
+                    <param id="0" name="Object">canoVermelho2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="735182956021324" type="Audio">
+                    <param id="0" name="Audio file">mario_coin_sound_1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
