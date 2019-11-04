@@ -14,7 +14,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <layout order="2">guiaDeInstrucao</layout>
         <layout order="3">ajuda</layout>
         <layout order="4">fase1</layout>
-        <event-sheet active="1" order="0">Event sheet 1</event-sheet>
+        <layout order="5">fase2</layout>
+        <layout active="1" order="6">fase3</layout>
+        <layout order="7">fase4</layout>
+        <layout order="8">fase5</layout>
+        <layout order="9">fase6</layout>
+        <event-sheet order="0">Event sheet 1</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -93,5 +98,50 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/caixote6/" />
         <folder expanded="1" path="animation-folder/moedas/" />
         <folder expanded="1" path="animation-folder/moedas2/" />
+        <folder expanded="1" path="animation-folder/porta/" />
+        <folder expanded="1" path="animation-folder/areaporta/" />
+        <folder expanded="1" path="animation-folder/piso2/" />
+        <folder expanded="1" path="animation-folder/arvore1/" />
+        <folder expanded="1" path="animation-folder/arvore2/" />
+        <folder expanded="1" path="animation-folder/arvore3/" />
+        <folder expanded="1" path="animation-folder/arvore4/" />
+        <folder expanded="1" path="animation-folder/arvore22/" />
+        <folder expanded="1" path="animation-folder/pisoDuro/" />
+        <folder expanded="1" path="animation-folder/florVermelha/" />
+        <folder expanded="1" path="animation-folder/florVermelha2/" />
+        <folder expanded="1" path="animation-folder/florVermelha3/" />
+        <folder expanded="1" path="animation-folder/tijoloVoador2/" />
+        <folder expanded="1" path="animation-folder/tijoloVoador3/" />
+        <folder expanded="1" path="animation-folder/tijoloVoador4/" />
+        <folder expanded="1" path="animation-folder/tijoloVoador5/" />
+        <folder expanded="1" path="animation-folder/tijoloVoador6/" />
+        <folder expanded="1" path="animation-folder/tijoloVoador7/" />
+        <folder expanded="1" path="animation-folder/tijoloVoador8/" />
+        <folder expanded="1" path="animation-folder/pisogramado/" />
+        <folder expanded="1" path="animation-folder/pisogramado2/" />
+        <folder expanded="1" path="animation-folder/pisogramado3/" />
+        <folder expanded="1" path="animation-folder/arvoreroxa/" />
+        <folder expanded="1" path="animation-folder/arvoreroxa1/" />
+        <folder expanded="1" path="animation-folder/pisogramado4/" />
+        <folder expanded="1" path="animation-folder/pisogramado5/" />
+        <folder expanded="1" path="animation-folder/pisogramado6/" />
+        <folder expanded="1" path="animation-folder/pisogramado7/" />
+        <folder expanded="1" path="animation-folder/pisogramado8/" />
+        <folder expanded="1" path="animation-folder/pisogramado9/" />
+        <folder expanded="1" path="animation-folder/paredePedra/" />
+        <folder expanded="1" path="animation-folder/moedas3/" />
+        <folder expanded="1" path="animation-folder/tijoloVoador9/" />
+        <folder expanded="1" path="animation-folder/porta2/" />
+        <folder expanded="1" path="animation-folder/morcego/" />
+        <folder expanded="1" path="animation-folder/pedra/" />
+        <folder expanded="1" path="animation-folder/caverna64/" />
+        <folder expanded="1" path="animation-folder/direcional/" />
+        <folder expanded="1" path="animation-folder/direcional2/" />
+        <folder expanded="1" path="animation-folder/setaTexto2/" />
+        <folder expanded="1" path="animation-folder/direcionalBaixo/" />
+        <folder expanded="1" path="animation-folder/direcionalAlto/" />
+        <folder expanded="1" path="animation-folder/moedas4/" />
+        <folder expanded="1" path="animation-folder/moedas5/" />
+        <folder expanded="1" path="animation-folder/dinossauro/" />
     </folders-expanded>
 </c2uistate>

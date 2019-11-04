@@ -20,6 +20,7 @@
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
@@ -1329,13 +1330,1503 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="porta" sid="930449947977120">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="124777079892991" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Franklin\Desktop\porta.png">
+                        <collision-poly>
+                            <point x="0.211538" y="0.171875" />
+                            <point x="0.5" y="0" />
+                            <point x="0.788462" y="0.171875" />
+                            <point x="0.865385" y="0.5" />
+                            <point x="0.903846" y="0.921875" />
+                            <point x="0.5" y="1" />
+                            <point x="0.115385" y="0.90625" />
+                            <point x="0.153846" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="areaporta" sid="914988612071082">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="246654108413359" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="piso2" sid="333960309509113">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="424381360240834" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Franklin\Desktop\piso.png">
+                        <collision-poly>
+                            <point x="0.0416667" y="0.0714286" />
+                            <point x="0.96875" y="0.0535714" />
+                            <point x="0.947917" y="0.910714" />
+                            <point x="0.5" y="0.964286" />
+                            <point x="0.0520833" y="0.910714" />
+                            <point x="0.03125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pisoFase2" sid="295471515089231">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="220276976689104">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Franklin\Desktop\piso.png" />
+        </object-type>
+        <object-type name="arvore1" sid="385266389430273">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="320687020059606" speed="5">
+                    <frame duration="1" hotspotX="0.507937" hotspotY="0.5" original-source="C:\Users\Franklin\Desktop\arvore1.png">
+                        <collision-poly>
+                            <point x="0.325397" y="0.148551" />
+                            <point x="0.5" y="0.0253623" />
+                            <point x="0.650794" y="0.15942" />
+                            <point x="0.714286" y="0.5" />
+                            <point x="0.666667" y="0.847826" />
+                            <point x="0.5" y="0.992754" />
+                            <point x="0.388889" y="0.822464" />
+                            <point x="0.261905" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="arvore2" sid="844852873919722">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="454741397065036" speed="5">
+                    <frame duration="1" hotspotX="0.508065" hotspotY="0.50365" original-source="C:\Users\Franklin\Desktop\arvore1.png">
+                        <collision-poly>
+                            <point x="0.325397" y="0.148551" />
+                            <point x="0.5" y="0.0253623" />
+                            <point x="0.650794" y="0.15942" />
+                            <point x="0.714286" y="0.5" />
+                            <point x="0.666667" y="0.847826" />
+                            <point x="0.5" y="0.992754" />
+                            <point x="0.388889" y="0.822464" />
+                            <point x="0.261905" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="arvore3" sid="338018954305193">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="392377419185859" speed="5">
+                    <frame duration="1" hotspotX="0.508065" hotspotY="0.50365" original-source="C:\Users\Franklin\Desktop\arvore1.png">
+                        <collision-poly>
+                            <point x="0.325397" y="0.148551" />
+                            <point x="0.5" y="0.0253623" />
+                            <point x="0.650794" y="0.15942" />
+                            <point x="0.714286" y="0.5" />
+                            <point x="0.666667" y="0.847826" />
+                            <point x="0.5" y="0.992754" />
+                            <point x="0.388889" y="0.822464" />
+                            <point x="0.261905" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="arvore4" sid="263489616439265">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="286148760091542" speed="5">
+                    <frame duration="1" hotspotX="0.508065" hotspotY="0.50365" original-source="C:\Users\Franklin\Desktop\arvore1.png">
+                        <collision-poly>
+                            <point x="0.325397" y="0.148551" />
+                            <point x="0.5" y="0.0253623" />
+                            <point x="0.650794" y="0.15942" />
+                            <point x="0.714286" y="0.5" />
+                            <point x="0.666667" y="0.847826" />
+                            <point x="0.5" y="0.992754" />
+                            <point x="0.388889" y="0.822464" />
+                            <point x="0.261905" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="arvore22" sid="576416621666141">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="320994552694064" speed="5">
+                    <frame duration="1" hotspotX="0.504274" hotspotY="0.5" original-source="C:\Users\Franklin\Desktop\arvore2.png">
+                        <collision-poly>
+                            <point x="0.25641" y="0.254237" />
+                            <point x="0.495726" y="0.0254237" />
+                            <point x="0.888889" y="0.110169" />
+                            <point x="0.931624" y="0.5" />
+                            <point x="0.666667" y="0.669492" />
+                            <point x="0.495726" y="0.855932" />
+                            <point x="0.153846" y="0.847458" />
+                            <point x="0.0769231" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="fundoFase2" sid="116036961897236">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Franklin\Desktop\mountain-game-background-8133_imgs_8133.png" />
+        </object-type>
+        <object-type name="pisoDuro" sid="885095138090966">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="737933644726523" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pisoDuro1" sid="614320659703784">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="653817139011184">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="florVermelha" sid="767258164695146">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="973044148990842" speed="5">
+                    <frame duration="1" hotspotX="0.514286" hotspotY="0.509804" original-source="C:\Users\Franklin\Desktop\florVermelha.png">
+                        <collision-poly>
+                            <point x="0.228571" y="0.156863" />
+                            <point x="0.485714" y="0.0392157" />
+                            <point x="0.714286" y="0.196078" />
+                            <point x="0.742857" y="0.490196" />
+                            <point x="0.8" y="0.862745" />
+                            <point x="0.485714" y="0.529412" />
+                            <point x="0.628571" y="0.568627" />
+                            <point x="0.314286" y="0.490196" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="florVermelha2" sid="736199979593646">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="207669283076502" speed="5">
+                    <frame duration="1" hotspotX="0.514286" hotspotY="0.509804" original-source="C:\Users\Franklin\Desktop\florVermelha.png">
+                        <collision-poly>
+                            <point x="0.228571" y="0.156863" />
+                            <point x="0.485714" y="0.0392157" />
+                            <point x="0.714286" y="0.196078" />
+                            <point x="0.742857" y="0.490196" />
+                            <point x="0.8" y="0.862745" />
+                            <point x="0.485714" y="0.529412" />
+                            <point x="0.628571" y="0.568627" />
+                            <point x="0.314286" y="0.490196" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="florVermelha3" sid="745236807892750">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="758759188488623" speed="5">
+                    <frame duration="1" hotspotX="0.514286" hotspotY="0.509804" original-source="C:\Users\Franklin\Desktop\florVermelha.png">
+                        <collision-poly>
+                            <point x="0.228571" y="0.156863" />
+                            <point x="0.485714" y="0.0392157" />
+                            <point x="0.714286" y="0.196078" />
+                            <point x="0.742857" y="0.490196" />
+                            <point x="0.8" y="0.862745" />
+                            <point x="0.485714" y="0.529412" />
+                            <point x="0.628571" y="0.568627" />
+                            <point x="0.314286" y="0.490196" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pisoDuro2" sid="521168987101821">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="120873622003507">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="tijoloVoador2" sid="784548549153477">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="605408226377114">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="544075577694302">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="552553436711979" speed="3">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tijoloVoador3" sid="429247686378345">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="598416101241815">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="947446482359382">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="174651533878265" speed="3">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tijoloVoador4" sid="756344208953060">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="669272794278923">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="848466066426865">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="508348980104068" speed="3">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tijoloVoador5" sid="172383533726594">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="835713603695500">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="521324653270276">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="812290332152043" speed="3">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tijoloVoador6" sid="199739420969073">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="137750236356439">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="558655576378360">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="414067749739147" speed="3">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tijoloVoador7" sid="219080992699066">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="549934501080999">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="472165727582853">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="508867147866407" speed="3">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tijoloVoador8" sid="419801737942709">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="512509330069099">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="352027835732850">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="865625684563654" speed="3">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="fundo3" sid="334774252270877">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Franklin\Desktop\soloFundo3.png" />
+        </object-type>
+        <object-type name="fundo4" sid="846382553974377">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Franklin\Desktop\fundo-de-jogo-de-noite-dos-desenhos-animados_54887-12.jpg" />
+        </object-type>
+        <object-type name="pisoDuro3" sid="933552958258810">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="894352902356878">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="pisoDuro4" sid="539289057954462">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="573285975000707">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="pisoDuro5" sid="253533809332363">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="888534084925308">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="pisoDuro6" sid="861316877096620">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="908175587684058">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="pisoDuro7" sid="163792600226107">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="997954762355585">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="pisoDuro8" sid="636331280851914">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="234415574753887">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="pisoDuro9" sid="797904325208730">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="579942779492744">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="pisoDuro10" sid="344310653838713">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="922054636875825">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="pisoDuro11" sid="617750660609238">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="559891525981169">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="pisoDuro12" sid="223326451193203">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="366074039850143">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="pisoDuro13" sid="392560569018518">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="383549924924706">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="pisoDuro14" sid="913489027026318">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="226025330766172">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="pisoDuro15" sid="305640004483157">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="412320795576110">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="pisoDuro16" sid="809014436539363">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="587955245538800">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="pisoDuro17" sid="420000236806996">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="673640708890697">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="pisoDuro18" sid="401807336670358">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="265963028924389">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="pisoDuro19" sid="433520338318150">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="217562132570483">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="pisoDuro20" sid="607093906982581">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="320700775135634">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="pisoDuro21" sid="828379176274112">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="969076195893585">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="pisoDuro22" sid="224299244936981">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="897936514587415">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="fundo5" sid="221522538184149">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Franklin\Desktop\fundo-de-jogo-de-noite-dos-desenhos-animados_54887-12.jpg" />
+        </object-type>
+        <object-type name="pisoDuro23" sid="455508901929786">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="219726291438771">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="pisoDuro24" sid="392077152068680">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="798427250890935">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="fundo6" sid="662439501676729">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Franklin\Desktop\fundo-de-jogo-de-noite-dos-desenhos-animados_54887-12.jpg" />
+        </object-type>
+        <object-type name="pisoDuro25" sid="287467517947706">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="873484071994109">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="pisoDuro26" sid="904782187006564">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="973741410346779">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="pisoDuro27" sid="720446908595770">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="972217874155841">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="fundoCeu3" sid="125878386842128">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Franklin\Desktop\fundo.png" />
+        </object-type>
+        <object-type name="pisogramado" sid="919512416705783">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="858537461565744">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="282367552414580" speed="5">
+                    <frame duration="1" hotspotX="0.500709" hotspotY="0.5" original-source="C:\Users\Franklin\Desktop\pisogramado.png">
+                        <collision-poly>
+                            <point x="0.00851064" y="0.0909091" />
+                            <point x="0.499291" y="0.030303" />
+                            <point x="0.992908" y="0.0757576" />
+                            <point x="0.984397" y="0.5" />
+                            <point x="0.967376" y="0.651515" />
+                            <point x="0.499291" y="0.924242" />
+                            <point x="0.0326241" y="0.651515" />
+                            <point x="0.0141844" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pisogramado2" sid="106106395802978">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="694770497268500">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="437786051578963" speed="5">
+                    <frame duration="1" hotspotX="0.502591" hotspotY="0.516129" original-source="C:\Users\Franklin\Desktop\pisogramado2.png">
+                        <collision-poly>
+                            <point x="0.0207254" y="0.129032" />
+                            <point x="0.497409" y="0.0967742" />
+                            <point x="0.953368" y="0.290323" />
+                            <point x="0.989637" y="0.483871" />
+                            <point x="0.958549" y="0.741935" />
+                            <point x="0.497409" y="0.903226" />
+                            <point x="0.0466321" y="0.709677" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pisogramado3" sid="992525148710359">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="791814665296706">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="930299784257101" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.517241" original-source="C:\Users\Franklin\Desktop\pisogramado3.png">
+                        <collision-poly>
+                            <point x="0.0363636" y="0.137931" />
+                            <point x="0.5" y="0.0344828" />
+                            <point x="0.936364" y="0.241379" />
+                            <point x="0.990909" y="0.482759" />
+                            <point x="0.927273" y="0.724138" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0727273" y="0.724138" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="arvoreroxa" sid="194784668025969">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="447910343782413" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Franklin\Desktop\arvoreroxa.png">
+                        <collision-poly>
+                            <point x="0.119658" y="0.115702" />
+                            <point x="0.5" y="0.00413223" />
+                            <point x="0.888889" y="0.107438" />
+                            <point x="0.910256" y="0.5" />
+                            <point x="0.598291" y="0.61157" />
+                            <point x="0.5" y="0.975207" />
+                            <point x="0.423077" y="0.590909" />
+                            <point x="0.0512821" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="arvoreroxa1" sid="751622783895019">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="620353093694808" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Franklin\Desktop\arvoreroxa.png">
+                        <collision-poly>
+                            <point x="0.119658" y="0.115702" />
+                            <point x="0.5" y="0.00413223" />
+                            <point x="0.888889" y="0.107438" />
+                            <point x="0.910256" y="0.5" />
+                            <point x="0.598291" y="0.61157" />
+                            <point x="0.5" y="0.975207" />
+                            <point x="0.423077" y="0.590909" />
+                            <point x="0.0512821" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pisogramado4" sid="398411619545849">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="684726103925101">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="724346548196196" speed="5">
+                    <frame duration="1" hotspotX="0.500709" hotspotY="0.5" original-source="C:\Users\Franklin\Desktop\pisogramado.png">
+                        <collision-poly>
+                            <point x="0.00851064" y="0.0909091" />
+                            <point x="0.499291" y="0.030303" />
+                            <point x="0.992908" y="0.0757576" />
+                            <point x="0.984397" y="0.5" />
+                            <point x="0.967376" y="0.651515" />
+                            <point x="0.499291" y="0.924242" />
+                            <point x="0.0326241" y="0.651515" />
+                            <point x="0.0141844" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pisogramado5" sid="133940036105887">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="884848033177387">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="389309696393513" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.517241" original-source="C:\Users\Franklin\Desktop\pisogramado3.png">
+                        <collision-poly>
+                            <point x="0.0363636" y="0.137931" />
+                            <point x="0.5" y="0.0344828" />
+                            <point x="0.936364" y="0.241379" />
+                            <point x="0.990909" y="0.482759" />
+                            <point x="0.927273" y="0.724138" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0727273" y="0.724138" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pisogramado6" sid="750387128566066">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="923420187313590">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="644843101227598" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.517241" original-source="C:\Users\Franklin\Desktop\pisogramado3.png">
+                        <collision-poly>
+                            <point x="0.0363636" y="0.137931" />
+                            <point x="0.5" y="0.0344828" />
+                            <point x="0.936364" y="0.241379" />
+                            <point x="0.990909" y="0.482759" />
+                            <point x="0.927273" y="0.724138" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0727273" y="0.724138" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pisogramado7" sid="447843146015994">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="390371819915494">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="417587769010109" speed="5">
+                    <frame duration="1" hotspotX="0.502591" hotspotY="0.516129" original-source="C:\Users\Franklin\Desktop\pisogramado2.png">
+                        <collision-poly>
+                            <point x="0.0207254" y="0.129032" />
+                            <point x="0.497409" y="0.0967742" />
+                            <point x="0.953368" y="0.290323" />
+                            <point x="0.989637" y="0.483871" />
+                            <point x="0.958549" y="0.741935" />
+                            <point x="0.497409" y="0.903226" />
+                            <point x="0.0466321" y="0.709677" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pisogramado8" sid="811393526750080">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="485829106622089">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="973245332534067" speed="5">
+                    <frame duration="1" hotspotX="0.500709" hotspotY="0.5" original-source="C:\Users\Franklin\Desktop\pisogramado.png">
+                        <collision-poly>
+                            <point x="0.00851064" y="0.0909091" />
+                            <point x="0.499291" y="0.030303" />
+                            <point x="0.992908" y="0.0757576" />
+                            <point x="0.984397" y="0.5" />
+                            <point x="0.967376" y="0.651515" />
+                            <point x="0.499291" y="0.924242" />
+                            <point x="0.0326241" y="0.651515" />
+                            <point x="0.0141844" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pisogramado9" sid="527220634096290">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="926246928744275">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="242218633566050" speed="5">
+                    <frame duration="1" hotspotX="0.500709" hotspotY="0.5" original-source="C:\Users\Franklin\Desktop\pisogramado.png">
+                        <collision-poly>
+                            <point x="0.00851064" y="0.0909091" />
+                            <point x="0.499291" y="0.030303" />
+                            <point x="0.992908" y="0.0757576" />
+                            <point x="0.984397" y="0.5" />
+                            <point x="0.967376" y="0.651515" />
+                            <point x="0.499291" y="0.924242" />
+                            <point x="0.0326241" y="0.651515" />
+                            <point x="0.0141844" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="paredePedra" sid="142041065594379">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="205551767200932" speed="5">
+                    <frame duration="1" hotspotX="0.508197" hotspotY="0.503268" original-source="C:\Users\Franklin\Desktop\pedraAlta.png">
+                        <collision-poly>
+                            <point x="0.114754" y="0.0457516" />
+                            <point x="0.491803" y="0.0130719" />
+                            <point x="0.967213" y="0.0130719" />
+                            <point x="0.918033" y="0.96732" />
+                            <point x="0.0655738" y="0.973856" />
+                            <point x="0.0327869" y="0.496732" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pisoDuro28" sid="177706892508353">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="402295270507274">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture />
+        </object-type>
+        <object-type name="TiledBackground" sid="243771097782620">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="224485548905799">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\2019_2\pmi\caixote.png" />
+        </object-type>
+        <object-type name="TiledBackground2" sid="277682603842191">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\2019_2\pmi\caixote.png" />
+        </object-type>
+        <object-type name="TiledBackground3" sid="800648479344590">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\2019_2\pmi\caixote.png" />
+        </object-type>
+        <object-type name="TiledBackground4" sid="538496555066914">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="357662882414078">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Franklin\Desktop\img\rocha.png" />
+        </object-type>
+        <object-type name="TiledBackground5" sid="619303282564544">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="151547604796750">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Franklin\Desktop\img\rocha.png" />
+        </object-type>
+        <object-type name="TiledBackground6" sid="981314320474099">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="171742177764461">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Franklin\Desktop\img\rocha.png" />
+        </object-type>
+        <object-type name="TiledBackground7" sid="518606556194280">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="333638812310130">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Franklin\Desktop\img\rocha.png" />
+        </object-type>
+        <object-type name="TiledBackground8" sid="128220129584070">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="826321235602535">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Franklin\Desktop\img\rocha.png" />
+        </object-type>
+        <object-type name="TiledBackground9" sid="953943030423730">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Franklin\Desktop\img\rochaComGrama.png" />
+        </object-type>
+        <object-type name="TiledBackground10" sid="842837314118307">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="379666254319800">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Franklin\Desktop\img\rocha.png" />
+        </object-type>
+        <object-type name="TiledBackground11" sid="334015719525497">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="306623331557995">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Franklin\Desktop\img\rocha.png" />
+        </object-type>
+        <object-type name="TiledBackground12" sid="341196026107730">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="106574192942256">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Franklin\Desktop\img\rocha.png" />
+        </object-type>
+        <object-type name="TiledBackground13" sid="930631291954520">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="354341422911123">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Franklin\Desktop\img\rocha.png" />
+        </object-type>
+        <object-type name="TiledBackground14" sid="922254605912742">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="322104100112425">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Franklin\Desktop\img\rocha.png" />
+        </object-type>
+        <object-type name="TiledBackground15" sid="595533077523771">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="915714094652879">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Franklin\Desktop\img\rocha.png" />
+        </object-type>
+        <object-type name="moedas3" sid="217571153455938">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="10" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="547021558264775" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.518519" original-source="C:\Users\Franklin\Downloads\ASU_19\0.png" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.518519" original-source="C:\Users\Franklin\Downloads\ASU_19\1.png" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.518519" original-source="C:\Users\Franklin\Downloads\ASU_19\2.png" />
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.518519" original-source="C:\Users\Franklin\Downloads\ASU_19\3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.518519" original-source="C:\Users\Franklin\Downloads\ASU_19\4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.518519" original-source="C:\Users\Franklin\Downloads\ASU_19\5.png" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.518519" />
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.518519" original-source="C:\Users\Franklin\Downloads\ASU_19\6.png" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.518519" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.518519" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tijoloVoador9" sid="780295659896869">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="792831642035517">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="892388027494151">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="3" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="592595510339860" speed="3">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground16" sid="640940139614869">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="888906942862283">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Franklin\Desktop\img\rocha.png" />
+        </object-type>
+        <object-type name="porta2" sid="882994259016219">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="948135301381379" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Franklin\Desktop\img\porta2.png">
+                        <collision-poly>
+                            <point x="0.164384" y="0.141176" />
+                            <point x="0.493151" y="0" />
+                            <point x="0.821918" y="0.152941" />
+                            <point x="1" y="0.494118" />
+                            <point x="0.931507" y="0.941176" />
+                            <point x="0.493151" y="0.929412" />
+                            <point x="0.0547945" y="0.952941" />
+                            <point x="0" y="0.494118" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground17" sid="508804566199153">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Franklin\Desktop\img\rochaComGrama.png" />
+        </object-type>
+        <object-type name="TiledBackground18" sid="404404558854928">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="755238637504640">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Franklin\Desktop\img\rocha.png" />
+        </object-type>
+        <object-type name="TiledBackground19" sid="826224969364442">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Franklin\Desktop\img\rocha.png" />
+        </object-type>
+        <object-type name="TiledBackground20" sid="536211825809993">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="462310259351142">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Franklin\Desktop\img\rocha.png" />
+        </object-type>
+        <object-type name="morcego" sid="616641637424753">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="direcaoMorcego" sid="405663306376218" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Platform" sid="689226923175947">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="814668180981575" speed="5">
+                    <frame duration="1" hotspotX="0.509434" hotspotY="0.52381" original-source="C:\Users\Franklin\Desktop\img\morcego1.png">
+                        <collision-poly>
+                            <point x="0.0747664" y="0.190476" />
+                            <point x="0.495327" y="0.142857" />
+                            <point x="0.934579" y="0.166667" />
+                            <point x="0.841121" y="0.5" />
+                            <point x="0.831776" y="0.571429" />
+                            <point x="0.495327" y="0.833333" />
+                            <point x="0.205607" y="0.47619" />
+                            <point x="0.214953" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.511628" hotspotY="0.52381" original-source="C:\Users\Franklin\Desktop\img\morcego2.png">
+                        <collision-poly>
+                            <point x="0.104651" y="0.214286" />
+                            <point x="0.5" y="0.142857" />
+                            <point x="0.895349" y="0.214286" />
+                            <point x="0.976744" y="0.5" />
+                            <point x="0.802326" y="0.595238" />
+                            <point x="0.5" y="0.857143" />
+                            <point x="0.0232558" y="0.952381" />
+                            <point x="0.0232558" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.515152" hotspotY="0.5" original-source="C:\Users\Franklin\Desktop\img\morcego3.png">
+                        <collision-poly>
+                            <point x="0.424242" y="0.474576" />
+                            <point x="0.5" y="0.0338983" />
+                            <point x="0.848485" y="0.169492" />
+                            <point x="0.833333" y="0.491525" />
+                            <point x="0.893939" y="0.881356" />
+                            <point x="0.5" y="0.576271" />
+                            <point x="0.106061" y="0.881356" />
+                            <point x="0.333333" y="0.491525" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.511628" hotspotY="0.52381" original-source="C:\Users\Franklin\Desktop\img\morcego4.png">
+                        <collision-poly>
+                            <point x="0.104651" y="0.214286" />
+                            <point x="0.5" y="0.166667" />
+                            <point x="0.895349" y="0.214286" />
+                            <point x="0.976744" y="0.5" />
+                            <point x="0.802326" y="0.595238" />
+                            <point x="0.5" y="0.880952" />
+                            <point x="0.0232558" y="0.952381" />
+                            <point x="0.0232558" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pedra" sid="905764281419389">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="613988209514617" speed="5">
+                    <frame duration="1" hotspotX="0.508197" hotspotY="0.503268" original-source="C:\Users\Franklin\Desktop\img\pedraAlta.png">
+                        <collision-poly>
+                            <point x="0.211864" y="0.257732" />
+                            <point x="0.5" y="0.0103093" />
+                            <point x="0.813559" y="0.226804" />
+                            <point x="0.940678" y="0.494845" />
+                            <point x="0.889831" y="0.865979" />
+                            <point x="0.5" y="0.979381" />
+                            <point x="0.118644" y="0.85567" />
+                            <point x="0.0677966" y="0.494845" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="backgroundAzul" sid="317263424189196">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Franklin\Desktop\img\Sprite_background_effects_0013.png" />
+        </object-type>
+        <object-type name="TiledBackground21" sid="914853337029872">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Franklin\Desktop\img\rochaComGrama.png" />
+        </object-type>
+        <object-type name="TiledBackground22" sid="788337448928218">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Franklin\Desktop\img\rochaComGrama.png" />
+        </object-type>
+        <object-type name="TiledBackground23" sid="978080745850945">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Franklin\Desktop\img\rochaComGrama.png" />
+        </object-type>
+        <object-type name="TiledBackground24" sid="762289648549972">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Franklin\Desktop\img\rochaComGrama.png" />
+        </object-type>
+        <object-type name="caverna64" sid="393137459498553">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="911870621195288" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504673" original-source="C:\Users\Franklin\Desktop\img\caverna128.png">
+                        <collision-poly>
+                            <point x="0.203125" y="0.240741" />
+                            <point x="0.5" y="0.0185185" />
+                            <point x="0.796875" y="0.240741" />
+                            <point x="0.875" y="0.5" />
+                            <point x="0.890625" y="0.87037" />
+                            <point x="0.5" y="1" />
+                            <point x="0.03125" y="0.962963" />
+                            <point x="0.171875" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="fundoCaverna" sid="750164584673166">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Franklin\Desktop\img\fundoCaverna.png" />
+        </object-type>
+        <object-type name="TiledBackground25" sid="884549282836075">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="867544617642772">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Franklin\Desktop\img\rocha.png" />
+        </object-type>
+        <object-type name="TiledBackground26" sid="909462061325224">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="812656505417156">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Franklin\Desktop\img\rocha.png" />
+        </object-type>
+        <object-type name="TiledBackground27" sid="389103106844769">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Franklin\Desktop\img\rochaComGrama.png" />
+        </object-type>
+        <object-type name="TiledBackground28" sid="863606338411568">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="367061964314130">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Franklin\Desktop\img\rocha.png" />
+        </object-type>
+        <object-type name="TiledBackground29" sid="893449304822860">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="200289479731824">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Franklin\Desktop\img\rocha.png" />
+        </object-type>
+        <object-type name="direcional" sid="581772717264710">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="471431548276471" speed="5">
+                    <frame duration="1" hotspotX="0.434783" hotspotY="0.415094" original-source="D:\2019_2\pmi\setaTexto.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.999646" y="0.447812" />
+                            <point x="0.579986" y="0.712988" />
+                            <point x="0.409499" y="0.805223" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.447812" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="direcional2" sid="313433199033995">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="981237736474990" speed="5">
+                    <frame duration="1" hotspotX="0.565217" hotspotY="0.415094" original-source="D:\2019_2\pmi\setaTexto.png">
+                        <collision-poly>
+                            <point x="1" y="0.447812" />
+                            <point x="1" y="1" />
+                            <point x="0.590501" y="0.805223" />
+                            <point x="0.420014" y="0.712988" />
+                            <point x="0.000353992" y="0.447812" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="setaTexto2" sid="954797047404257">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="249663759646507" speed="5">
+                    <frame duration="1" hotspotX="0.467391" hotspotY="0.476636" original-source="C:\Users\Franklin\Desktop\pmi\setaTexto.png">
+                        <collision-poly>
+                            <point x="0.0543478" y="0.0280374" />
+                            <point x="0.945652" y="0.476636" />
+                            <point x="0.597826" y="0.691589" />
+                            <point x="0.456522" y="0.766355" />
+                            <point x="0.0108696" y="0.962617" />
+                            <point x="0.0108696" y="0.476636" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground30" sid="346400411456685">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="805649149478694">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Franklin\Desktop\img\rocha.png" />
+        </object-type>
+        <object-type name="blocoElevador" sid="933073654615395">
+            <plugin id="TiledBg" />
+            <instance-variables>
+                <instance-variable name="blocoElevador" sid="993093788405075" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="799876767861074">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="949998160207705">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Franklin\Desktop\img\rochaComGrama.png" />
+        </object-type>
+        <object-type name="direcionalBaixo" sid="461969392355515">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="273644575663668" speed="5">
+                    <frame duration="1" hotspotX="0.415094" hotspotY="0.434783" original-source="D:\2019_2\pmi\setaTexto.png">
+                        <collision-poly>
+                            <point x="0.447812" y="0" />
+                            <point x="1" y="0" />
+                            <point x="0.805223" y="0.409499" />
+                            <point x="0.712988" y="0.579986" />
+                            <point x="0.447812" y="0.999646" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="direcionalAlto" sid="339570001644333">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="578887275191765" speed="5">
+                    <frame duration="1" hotspotX="0.584906" hotspotY="0.565217" original-source="D:\2019_2\pmi\setaTexto.png">
+                        <collision-poly>
+                            <point x="0.552188" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.194777" y="0.590501" />
+                            <point x="0.287012" y="0.420014" />
+                            <point x="0.552188" y="0.000353992" />
+                            <point x="1" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="moedas4" sid="153859521457234">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="10" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="760644817021227" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.518519" original-source="C:\Users\Franklin\Downloads\ASU_19\0.png" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.518519" original-source="C:\Users\Franklin\Downloads\ASU_19\1.png" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.518519" original-source="C:\Users\Franklin\Downloads\ASU_19\2.png" />
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.518519" original-source="C:\Users\Franklin\Downloads\ASU_19\3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.518519" original-source="C:\Users\Franklin\Downloads\ASU_19\4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.518519" original-source="C:\Users\Franklin\Downloads\ASU_19\5.png" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.518519" />
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.518519" original-source="C:\Users\Franklin\Downloads\ASU_19\6.png" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.518519" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.518519" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="moedas5" sid="177792622153210">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="10" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="694901652325756" speed="7">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.518519" original-source="C:\Users\Franklin\Downloads\ASU_19\0.png" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.518519" original-source="C:\Users\Franklin\Downloads\ASU_19\1.png" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.518519" original-source="C:\Users\Franklin\Downloads\ASU_19\2.png" />
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.518519" original-source="C:\Users\Franklin\Downloads\ASU_19\3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.518519" original-source="C:\Users\Franklin\Downloads\ASU_19\4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.518519" original-source="C:\Users\Franklin\Downloads\ASU_19\5.png" />
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.518519" />
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.518519" original-source="C:\Users\Franklin\Downloads\ASU_19\6.png" />
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.518519" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.518519" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="terreno" sid="550172076907342">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\2019_2\pmi\chaoBloco.png" />
+        </object-type>
+        <object-type name="piso" sid="828184354214226">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\2019_2\pmi\chaoTerra.png" />
+        </object-type>
+        <object-type name="dinossauro" sid="944870256772449">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="6" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="801427449671232" speed="7">
+                    <frame duration="1" hotspotX="0.501484" hotspotY="1" original-source="C:\Users\Franklin\Desktop\img\dino1.png">
+                        <collision-poly>
+                            <point x="0.0534125" y="0.0837209" />
+                            <point x="0.498516" y="0.269767" />
+                            <point x="0.833828" y="0.260465" />
+                            <point x="0.602374" y="0.497674" />
+                            <point x="0.646884" y="0.446512" />
+                            <point x="0.498516" y="0.767442" />
+                            <point x="0.192878" y="0.697674" />
+                            <point x="0.219585" y="0.497674" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501548" hotspotY="1" original-source="C:\Users\Franklin\Desktop\img\dino2.png">
+                        <collision-poly>
+                            <point x="0.0589889" y="0.0875053" />
+                            <point x="0.524763" y="0.27186" />
+                            <point x="0.875647" y="0.262643" />
+                            <point x="0.633444" y="0.497696" />
+                            <point x="0.680021" y="0.446998" />
+                            <point x="0.524763" y="0.765011" />
+                            <point x="0.204932" y="0.695877" />
+                            <point x="0.232878" y="0.497696" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Franklin\Desktop\img\dino3.png">
+                        <collision-poly>
+                            <point x="0.0559644" y="0.0876481" />
+                            <point x="0.498525" y="0.271939" />
+                            <point x="0.83192" y="0.262725" />
+                            <point x="0.601789" y="0.497696" />
+                            <point x="0.646045" y="0.447016" />
+                            <point x="0.498525" y="0.764919" />
+                            <point x="0.194633" y="0.69581" />
+                            <point x="0.221187" y="0.497696" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501484" hotspotY="1" original-source="C:\Users\Franklin\Desktop\img\dino4.png">
+                        <collision-poly>
+                            <point x="0.0560628" y="0.0874882" />
+                            <point x="0.498525" y="0.271851" />
+                            <point x="0.831847" y="0.262633" />
+                            <point x="0.601766" y="0.497695" />
+                            <point x="0.646012" y="0.446996" />
+                            <point x="0.498525" y="0.765022" />
+                            <point x="0.194701" y="0.695885" />
+                            <point x="0.221249" y="0.497695" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Franklin\Desktop\img\dino5.png">
+                        <collision-poly>
+                            <point x="0.0561863" y="0.0874048" />
+                            <point x="0.498526" y="0.271805" />
+                            <point x="0.831754" y="0.262585" />
+                            <point x="0.601738" y="0.497695" />
+                            <point x="0.645972" y="0.446985" />
+                            <point x="0.498526" y="0.765075" />
+                            <point x="0.194786" y="0.695925" />
+                            <point x="0.221326" y="0.497695" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="C:\Users\Franklin\Desktop\img\dino6.png">
+                        <collision-poly>
+                            <point x="0.056055" y="0.0875226" />
+                            <point x="0.498525" y="0.27187" />
+                            <point x="0.831853" y="0.262653" />
+                            <point x="0.601768" y="0.497696" />
+                            <point x="0.646015" y="0.447" />
+                            <point x="0.498525" y="0.764999" />
+                            <point x="0.194696" y="0.695869" />
+                            <point x="0.221244" y="0.497696" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>main_menu.xml</layout>
         <layout>fase1.xml</layout>
+        <layout>fase2.xml</layout>
+        <layout>fase3.xml</layout>
         <layout>ajuda.xml</layout>
         <layout>guiaDeInstrucao.xml</layout>
+        <layout>fase4.xml</layout>
+        <layout>fase5.xml</layout>
+        <layout>fase6.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
