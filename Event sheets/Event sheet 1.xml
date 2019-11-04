@@ -423,80 +423,84 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="985329537969501">
-            <conditions>
-                <condition id="3" name="On touched object" sid="235407753639394" type="Touch">
-                    <param id="0" name="Object">setaTexto</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="257943172967076" type="spriteFontTexto">
-                    <param id="0" name="Text">&quot;&quot;</param>
-                </action>
-                <action id="-10" name="Set value" sid="503591798440416" type="spriteFontTexto">
-                    <param id="0" name="Instance variable">texto_para_mostrar</param>
-                    <param id="1" name="Value">&quot;Olá pessoal! Vamos aprender brincando agora&quot;</param>
-                </action>
-                <action id="-13" name="Set boolean" sid="150616131548885" type="spriteFontTexto">
-                    <param id="0" name="Instance variable">show</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="922921432724475">
-            <conditions>
-                <condition id="3" name="On touched object" sid="152121687932690" type="Touch">
-                    <param id="0" name="Object">setaAmarela</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="782751906500793" type="spriteFontTexto">
-                    <param id="0" name="Text">&quot;&quot;</param>
-                </action>
-                <action id="-10" name="Set value" sid="298394259325975" type="spriteFontTexto">
-                    <param id="0" name="Instance variable">texto_para_mostrar</param>
-                    <param id="1" name="Value">&quot;Segunda caixa de texto&quot;</param>
-                </action>
-                <action id="-13" name="Set boolean" sid="690585539312554" type="spriteFontTexto">
-                    <param id="0" name="Instance variable">show</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="383666341874214">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="744577902145906" type="System" />
-            </conditions>
-            <actions />
+        <event-group description="" sid="417685262110318" title="Texto de ajuda">
             <sub-events>
-                <event-block sid="393162024923341">
+                <event-block sid="985329537969501">
                     <conditions>
-                        <condition id="-8" name="Is boolean instance variable set" sid="110541810901595" type="spriteFontTexto">
-                            <param id="0" name="Instance variable">show</param>
+                        <condition id="3" name="On touched object" sid="235407753639394" type="Touch">
+                            <param id="0" name="Object">setaTexto</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="0" name="Set text" sid="159326193879607" type="spriteFontTexto">
-                            <param id="0" name="Text">left(spriteFontTexto.texto_para_mostrar,len(spriteFontTexto.Text)+1)</param>
+                        <action id="0" name="Set text" sid="257943172967076" type="spriteFontTexto">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="503591798440416" type="spriteFontTexto">
+                            <param id="0" name="Instance variable">texto_para_mostrar</param>
+                            <param id="1" name="Value">&quot;Olá pessoal! Vamos aprender brincando agora&quot;</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="150616131548885" type="spriteFontTexto">
+                            <param id="0" name="Instance variable">show</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="922921432724475">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="152121687932690" type="Touch">
+                            <param id="0" name="Object">setaAmarela</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="782751906500793" type="spriteFontTexto">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="298394259325975" type="spriteFontTexto">
+                            <param id="0" name="Instance variable">texto_para_mostrar</param>
+                            <param id="1" name="Value">&quot;Segunda caixa de texto&quot;</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="690585539312554" type="spriteFontTexto">
+                            <param id="0" name="Instance variable">show</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="383666341874214">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="744577902145906" type="System" />
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="393162024923341">
+                            <conditions>
+                                <condition id="-8" name="Is boolean instance variable set" sid="110541810901595" type="spriteFontTexto">
+                                    <param id="0" name="Instance variable">show</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="159326193879607" type="spriteFontTexto">
+                                    <param id="0" name="Text">left(spriteFontTexto.texto_para_mostrar,len(spriteFontTexto.Text)+1)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="107735831695850">
+                    <conditions>
+                        <condition id="0" name="Compare text" sid="589802621739599" type="spriteFontTexto">
+                            <param id="0" name="Text to compare">spriteFontTexto.texto_para_mostrar</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-13" name="Set boolean" sid="649411225523106" type="spriteFontTexto">
+                            <param id="0" name="Instance variable">show</param>
+                            <param id="1" name="Value">0</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="107735831695850">
-            <conditions>
-                <condition id="0" name="Compare text" sid="589802621739599" type="spriteFontTexto">
-                    <param id="0" name="Text to compare">spriteFontTexto.texto_para_mostrar</param>
-                    <param id="1" name="Case sensitivity">0</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-13" name="Set boolean" sid="649411225523106" type="spriteFontTexto">
-                    <param id="0" name="Instance variable">show</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-            </actions>
-        </event-block>
+        </event-group>
         <event-group description="" sid="940093910370906" title="Primeira Muralha">
             <sub-events>
                 <comment>Primeira Muralha</comment>
@@ -616,150 +620,271 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="573614362366636" title="Personagem x Banana" />
-        <comment>Personagem x Banana</comment>
-        <event-block sid="876747179551998">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="514992860905444" type="personagem">
-                    <param id="0" name="Object">banana</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="775830078723293" type="banana" />
-                <action id="0" name="Play" sid="859012564843560" type="Audio">
-                    <param id="0" name="Audio file">mario_coin_sound_1</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="421351208483211">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="553148894818261" type="personagem">
-                    <param id="0" name="Object">banana2</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="104406967645735" type="banana2" />
-                <action id="0" name="Play" sid="502412451592039" type="Audio">
-                    <param id="0" name="Audio file">mario_coin_sound_1</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="338251939852363">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="756859450192052" type="personagem">
-                    <param id="0" name="Object">banana3</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="107197663020608" type="banana3" />
-                <action id="0" name="Play" sid="983766280486845" type="Audio">
-                    <param id="0" name="Audio file">mario_coin_sound_1</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="302467903811774">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="713766966803594" type="personagem">
-                    <param id="0" name="Object">banana4</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="259074376120009" type="banana4" />
-                <action id="0" name="Play" sid="202563292915152" type="Audio">
-                    <param id="0" name="Audio file">mario_coin_sound_1</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="910370498292717">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="161611857460993" type="personagem">
-                    <param id="0" name="Object">banana5</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="848328209438433" type="banana5" />
-                <action id="0" name="Play" sid="548205752214626" type="Audio">
-                    <param id="0" name="Audio file">mario_coin_sound_1</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="312038977425075">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="831227915240083" type="personagem">
-                    <param id="0" name="Object">banana7</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="219919187410400" type="banana7" />
-                <action id="0" name="Play" sid="495112705292644" type="Audio">
-                    <param id="0" name="Audio file">mario_coin_sound_1</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="738412258466824">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="797838683935824" type="personagem">
-                    <param id="0" name="Object">moedas</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="955996208618487" type="moedas" />
-                <action id="0" name="Play" sid="804428124241940" type="Audio">
-                    <param id="0" name="Audio file">mario_coin_sound_1</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="665508012173104">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="751086905446513" type="personagem">
-                    <param id="0" name="Object">moedas2</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Destroy" sid="571320787265327" type="moedas2" />
-                <action id="0" name="Play" sid="580157990529154" type="Audio">
-                    <param id="0" name="Audio file">mario_coin_sound_1</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="534157772733444">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="444527224825011" type="personagem">
-                    <param id="0" name="Object">canoVermelho2</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Play" sid="735182956021324" type="Audio">
-                    <param id="0" name="Audio file">mario_coin_sound_1</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="" sid="573614362366636" title="Personagem x Banana">
+            <sub-events>
+                <comment>Personagem x Banana</comment>
+                <event-block sid="876747179551998">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="514992860905444" type="personagem">
+                            <param id="0" name="Object">banana</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="775830078723293" type="banana" />
+                        <action id="0" name="Play" sid="859012564843560" type="Audio">
+                            <param id="0" name="Audio file">mario_coin_sound_1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="421351208483211">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="553148894818261" type="personagem">
+                            <param id="0" name="Object">banana2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="104406967645735" type="banana2" />
+                        <action id="0" name="Play" sid="502412451592039" type="Audio">
+                            <param id="0" name="Audio file">mario_coin_sound_1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="338251939852363">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="756859450192052" type="personagem">
+                            <param id="0" name="Object">banana3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="107197663020608" type="banana3" />
+                        <action id="0" name="Play" sid="983766280486845" type="Audio">
+                            <param id="0" name="Audio file">mario_coin_sound_1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="302467903811774">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="713766966803594" type="personagem">
+                            <param id="0" name="Object">banana4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="259074376120009" type="banana4" />
+                        <action id="0" name="Play" sid="202563292915152" type="Audio">
+                            <param id="0" name="Audio file">mario_coin_sound_1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="910370498292717">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="161611857460993" type="personagem">
+                            <param id="0" name="Object">banana5</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="848328209438433" type="banana5" />
+                        <action id="0" name="Play" sid="548205752214626" type="Audio">
+                            <param id="0" name="Audio file">mario_coin_sound_1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="312038977425075">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="831227915240083" type="personagem">
+                            <param id="0" name="Object">banana7</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="219919187410400" type="banana7" />
+                        <action id="0" name="Play" sid="495112705292644" type="Audio">
+                            <param id="0" name="Audio file">mario_coin_sound_1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="738412258466824">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="797838683935824" type="personagem">
+                            <param id="0" name="Object">moedas</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="955996208618487" type="moedas" />
+                        <action id="0" name="Play" sid="804428124241940" type="Audio">
+                            <param id="0" name="Audio file">mario_coin_sound_1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="665508012173104">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="751086905446513" type="personagem">
+                            <param id="0" name="Object">moedas2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="571320787265327" type="moedas2" />
+                        <action id="0" name="Play" sid="580157990529154" type="Audio">
+                            <param id="0" name="Audio file">mario_coin_sound_1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="534157772733444">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="444527224825011" type="personagem">
+                            <param id="0" name="Object">canoVermelho2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="735182956021324" type="Audio">
+                            <param id="0" name="Audio file">mario_coin_sound_1</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="341611707758854">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="519956408394307" type="personagem">
+                            <param id="0" name="Object">areaporta</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-43" name="Go to next/previous layout" sid="834867999721482" type="System">
+                            <param id="0" name="Which">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="265264887869837" title="Movimento Morcego">
+            <sub-events>
+                <event-block sid="243105335590387">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="272129165139730" type="morcego">
+                            <param id="0" name="Instance variable">direcaoMorcego</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="756215191466487" type="morcego">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="691620135424764" type="morcego">
+                            <param id="0" name="State">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="417869821179463">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="315013194882689" type="morcego">
+                            <param id="0" name="Instance variable">direcaoMorcego</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="123754685177090" type="morcego">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="7" name="Set mirrored" sid="986033456086091" type="morcego">
+                            <param id="0" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="972834038649131">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="272164423352126" type="morcego">
+                            <param id="0" name="Object">direcional</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="564627511563761" type="morcego">
+                            <param id="0" name="Instance variable">direcaoMorcego</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="219691300031868" type="morcego">
+                            <param id="0" name="Instance variable">direcaoMorcego</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="132544489004558">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="306453353089075" type="morcego">
+                            <param id="0" name="Object">direcional2</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="107733480106312" type="morcego">
+                            <param id="0" name="Instance variable">direcaoMorcego</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="930721038222331" type="morcego">
+                            <param id="0" name="Instance variable">direcaoMorcego</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="912753089553423" title="Movimento Bloco Voador">
+            <sub-events>
+                <event-block sid="706982215203608">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="949005617608908" type="blocoElevador">
+                            <param id="0" name="Instance variable">blocoElevador</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="5" name="Set acceleration" sid="642081340524259" type="blocoElevador">
+                            <param id="0" name="Acceleration">30</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="311649109429325">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="301529503937881" type="blocoElevador">
+                            <param id="0" name="Instance variable">blocoElevador</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="6" name="Set deceleration" sid="522404615022561" type="blocoElevador">
+                            <param id="0" name="Deceleration">30</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
